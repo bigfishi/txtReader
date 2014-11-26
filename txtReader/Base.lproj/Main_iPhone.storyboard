@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ucP-5L-BgM">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Tr List View Controller - 文件-->
+        <scene sceneID="lUG-70-zmO">
+            <objects>
+                <viewController storyboardIdentifier="file" title="文件" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1Pg-Wn-epc" customClass="trListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="whZ-2E-luX"/>
+                        <viewControllerLayoutGuide type="bottom" id="Muu-hc-Qn0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bu9-18-fIs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="文件" image="TabBar_Index.png" id="jlN-HH-oSG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PUA-ad-L2Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="255" y="-332"/>
+        </scene>
+        <!--Tr Reading View Controller - 阅读-->
+        <scene sceneID="w4p-NQ-eNe">
+            <objects>
+                <viewController storyboardIdentifier="reading" title="阅读" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VmM-y2-L9I" customClass="trReadingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="J5q-Eq-dRY"/>
+                        <viewControllerLayoutGuide type="bottom" id="Z6c-OQ-rs0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5sA-s0-EZc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="阅读" image="TabBar_Reading.png" id="D76-kn-Q2w"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cuR-Yp-gPK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="255" y="335"/>
+        </scene>
+        <!--Tr Base View Controller-->
+        <scene sceneID="5g4-L8-KgW">
+            <objects>
+                <viewController id="xQl-qH-Qed" customClass="trBaseViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2r9-uI-4du"/>
+                        <viewControllerLayoutGuide type="bottom" id="dPW-SK-Uxr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NcG-Gx-w2e">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="93S-wQ-1yz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="986" y="135"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="j6M-RM-v5h">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="ucP-5L-BgM" sceneMemberID="viewController">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="911-nI-cIj">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="1Pg-Wn-epc" kind="relationship" relationship="viewControllers" id="dxE-Zt-BOf"/>
+                        <segue destination="VmM-y2-L9I" kind="relationship" relationship="viewControllers" id="eEn-Wg-tt1"/>
+                        <segue destination="ecq-0Y-JUY" kind="relationship" relationship="viewControllers" id="LAT-Pg-jTj"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TeZ-Ns-Jdv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-279" y="335"/>
+        </scene>
+        <!--View Controller - 说明-->
+        <scene sceneID="ztP-I3-DGT">
+            <objects>
+                <viewController storyboardIdentifier="about" title="说明" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ecq-0Y-JUY" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d1M-e5-zOh"/>
+                        <viewControllerLayoutGuide type="bottom" id="GDX-4v-o74"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6r7-1A-6Mn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="说明" image="TabBar_About.png" id="oNf-KE-BGE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4my-6t-WGH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="255" y="993"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TabBar_About.png" width="24" height="24"/>
+        <image name="TabBar_Index.png" width="24" height="24"/>
+        <image name="TabBar_Reading.png" width="24" height="24"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
